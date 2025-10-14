@@ -1,1 +1,183 @@
-<p>about works!</p>
+<!-- About Section -->
+<section class="mx-auto max-w-7xl px-4 lg:px-8 py-16">
+  <!-- Heading -->
+  <header class="mb-8">
+    <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight">About</h1>
+    <p class="mt-3 text-slate-300 max-w-prose">
+      I’m <span class="font-semibold">Lisa Copeland</span>, a senior full-stack developer who loves turning messy
+      problems
+      into clean, scalable software. I specialize in <span class="font-semibold">Angular upgrades & fixes</span>,
+      modern front-ends, and production-ready back-ends on AWS.
+    </p>
+  </header>
+
+  <!-- Content Grid -->
+  <div class="grid gap-10 lg:grid-cols-3">
+    <!-- Main column -->
+    <div class="lg:col-span-2 space-y-10">
+      <!-- Programming History -->
+      <section>
+        <h2 class="text-xl sm:text-2xl font-semibold">Programming History</h2>
+        <p class="mt-3 text-slate-300 max-w-prose">
+          Over the past decade I’ve delivered apps end-to-end: architecting front-ends in
+          <span class="font-medium">Angular (v2–19)</span> and <span class="font-medium">Vue/Quasar</span>,
+          building APIs with <span class="font-medium">Node.js/TypeScript</span> and <span
+            class="font-medium">.NET</span>,
+          and deploying to <span class="font-medium">AWS</span> (EC2, API Gateway, S3/CloudFront, Lambda, DynamoDB,
+          SES).
+          I’m known for quickly diagnosing tough Angular issues, modernizing legacy codebases, and leaving teams with
+          cleaner code and better pipelines.
+        </p>
+
+        <!-- Timeline-ish list -->
+        <ol class="mt-6 space-y-5">
+          <li class="border-l border-slate-800 pl-4">
+            <div class="text-slate-200 font-medium">DrainData — Founder / Senior Full-Stack Engineer</div>
+            <div class="text-slate-400 text-sm">2024–Present</div>
+            <p class="mt-1 text-slate-300">
+              Patient app to track JP drain output. Angular/Vue UIs, .NET 8 & Node/TS APIs, DynamoDB. AWS infra with
+              CI/CD.
+              Exploring Epic FHIR / SMART-on-FHIR for clinician tools.
+            </p>
+          </li>
+          <li class="border-l border-slate-800 pl-4">
+            <div class="text-slate-200 font-medium">StoryTaim — Co-founder / Full-Stack Engineer</div>
+            <div class="text-slate-400 text-sm">2024–Present</div>
+            <p class="mt-1 text-slate-300">
+              Creative-writing platform (Node/TS + MongoDB Atlas + GridFS). JWT auth, background jobs, uploads, and
+              observability on AWS.
+            </p>
+          </li>
+          <li class="border-l border-slate-800 pl-4">
+            <div class="text-slate-200 font-medium">Senior Engineer & Consultant (Various)</div>
+            <div class="text-slate-400 text-sm">2015–2024</div>
+            <p class="mt-1 text-slate-300">
+              Angular apps with PrimeNG/Material, performance & accessibility, legacy modernization, CI/CD, and secure
+              integrations.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Extracurriculars -->
+      <section>
+        <h2 class="text-xl sm:text-2xl font-semibold">Beyond the Code</h2>
+        <ul class="mt-3 grid gap-4 sm:grid-cols-2">
+          <li class="rounded-xl border border-slate-800 bg-slate-900/60 p-4">
+            <div class="font-medium text-slate-200">San Sebastian Equestrian Center</div>
+            <p class="mt-1 text-slate-300 text-sm">
+              Co-run the business and manage the website/ops. I like applying product thinking to real-world operations.
+            </p>
+          </li>
+          <li class="rounded-xl border border-slate-800 bg-slate-900/60 p-4">
+            <div class="font-medium text-slate-200">Community & Mentoring</div>
+            <p class="mt-1 text-slate-300 text-sm">
+              I enjoy mentoring devs, writing DX notes, and helping teams improve testing and deployment workflows.
+            </p>
+          </li>
+          <li class="rounded-xl border border-slate-800 bg-slate-900/60 p-4">
+            <div class="font-medium text-slate-200">Projects & Properties</div>
+            <p class="mt-1 text-slate-300 text-sm">
+              Renovation logistics, permits, and tenant communications — the same systems mindset, different domain.
+            </p>
+          </li>
+          <li class="rounded-xl border border-slate-800 bg-slate-900/60 p-4">
+            <div class="font-medium text-slate-200">Travel & Planning</div>
+            <p class="mt-1 text-slate-300 text-sm">
+              I love planning efficient trips — turning constraints into clear, enjoyable itineraries.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Call to actions -->
+      <div class="flex flex-wrap gap-3">
+        <a routerLink="/projects" class="inline-flex items-center justify-center rounded-xl px-5 py-3
+                  bg-indigo-500 text-white font-medium hover:bg-indigo-600
+                  focus:outline-none focus:ring-2 focus:ring-indigo-400">
+          See Projects
+        </a>
+        <a routerLink="/contact" class="inline-flex items-center justify-center rounded-xl px-5 py-3
+                  border border-slate-700 text-slate-100 hover:bg-slate-800/60
+                  focus:outline-none focus:ring-2 focus:ring-slate-500">
+          Get in Touch
+        </a>
+      </div>
+    </div>
+
+    <!-- Sidebar column -->
+    <aside class="space-y-8">
+      <!-- Quick facts -->
+      <section class="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
+        <h3 class="text-lg font-semibold">Quick Facts</h3>
+        <dl class="mt-3 space-y-2 text-slate-300">
+          <div class="flex items-start gap-2">
+            <dt class="min-w-24 text-slate-400">Focus</dt>
+            <dd>Angular upgrades/fixes, modernizing legacy apps</dd>
+          </div>
+          <div class="flex items-start gap-2">
+            <dt class="min-w-24 text-slate-400">Back-end</dt>
+            <dd>Node/TypeScript, .NET 8</dd>
+          </div>
+          <div class="flex items-start gap-2">
+            <dt class="min-w-24 text-slate-400">Cloud</dt>
+            <dd>AWS (EC2, S3/CF, API Gateway, Lambda, DynamoDB, SES, CI/CD)</dd>
+          </div>
+          <div class="flex items-start gap-2">
+            <dt class="min-w-24 text-slate-400">UI</dt>
+            <dd>Angular, Vue/Quasar, Tailwind, PrimeNG/Material, a11y & perf</dd>
+          </div>
+        </dl>
+      </section>
+
+      <!-- Skills chips -->
+      <section class="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
+        <h3 class="text-lg font-semibold">Tech I Use</h3>
+        <ul class="mt-3 flex flex-wrap gap-2">
+          <li class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-slate-200">Angular</li>
+          <li class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-slate-200">PrimeNG</li>
+          <li class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-slate-200">Vue/Quasar</li>
+          <li class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-slate-200">TypeScript</li>
+          <li class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-slate-200">.NET 8</li>
+          <li class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-slate-200">AWS</li>
+          <li class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-slate-200">DynamoDB</li>
+          <li class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-slate-200">MongoDB Atlas</li>
+        </ul>
+      </section>
+
+      <!-- Resume Card (download + view) -->
+      <section class="rounded-2xl border border-slate-800 bg-slate-900/70 p-5">
+        <div class="flex flex-col gap-4">
+          <div>
+            <h3 class="text-lg font-semibold">Resume</h3>
+            <p class="mt-1 text-slate-300 text-sm">
+              One-page snapshot of my experience. Updated regularly.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <a href="assets/Lisa_Copeland_Resume.pdf" download class="inline-flex items-center gap-2 rounded-xl px-5 py-3
+                     bg-indigo-500 text-white font-medium hover:bg-indigo-600
+                     focus:outline-none focus:ring-2 focus:ring-indigo-400" aria-label="Download resume as PDF">
+              <svg class="size-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 3a1 1 0 0 1 1 1v9.59l2.3-2.3a1 1 0 1 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-4-4a1 1 0 1 1 1.4-1.42L11 13.59V4a1 1 0 0 1 1-1Z" />
+                <path d="M4 20a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1Z" />
+              </svg>
+              Download PDF
+            </a>
+
+            <a href="assets/Lisa_Copeland_Resume.pdf" target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-xl px-5 py-3
+                     border border-slate-700 text-slate-100 hover:bg-slate-800/60
+                     focus:outline-none focus:ring-2 focus:ring-slate-500" aria-label="View resume in a new tab">
+              <svg class="size-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 5c5.52 0 9.66 4.1 10.75 6.1a1 1 0 0 1 0 .8C21.66 14.9 17.52 19 12 19S2.34 14.9 1.25 11.9a1 1 0 0 1 0-.8C2.34 9.1 6.48 5 12 5Zm0 2C7.83 7 4.36 10.16 3.34 12 4.36 13.84 7.83 17 12 17s7.64-3.16 8.66-5C19.64 10.16 16.17 7 12 7Zm0 2.5A2.5 2.5 0 1 1 9.5 12 2.5 2.5 0 0 1 12 9.5Z" />
+              </svg>
+              View PDF
+            </a>
+          </div>
+        </div>
+      </section>
+    </aside>
+  </div>
+</section>

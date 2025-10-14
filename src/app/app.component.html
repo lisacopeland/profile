@@ -1,10 +1,14 @@
 <div class="min-h-screen flex flex-col bg-slate-950 text-slate-100">
   <header class="w-full bg-slate-900 text-slate-100 border-b border-slate-800">
-    <nav class="mx-auto max-w-7xl px-4 lg:px-8 py-4
+    <nav class="mx-auto px-4 lg:px-8 py-4
              grid items-center gap-4
              [grid-template-columns:1fr_auto_1fr]">
       <div class="flex items-center">
-        <a routerLink="/" class="text-base font-semibold">LC</a>
+        <a routerLink="/" aria-label="Home" class="inline-flex items-center justify-center p-1 rounded-full
+           hover:bg-slate-800/60 focus:outline-none focus:ring-2 focus:ring-slate-500/50">
+          <img src="assets/me.jpg" srcset="assets/me@2x.jpg 2x" alt="Lisa Copeland" width="36" height="36" class="h-9 w-9 rounded-full object-cover ring-1 ring-slate-700 transition
+             group-hover:ring-slate-500" loading="eager" decoding="async" fetchpriority="high" />
+        </a>
       </div>
 
       <ul class="flex items-center justify-center gap-8 text-sm font-medium">
@@ -51,7 +55,7 @@
   </main>
 
   <footer class="mt-8 border-t border-slate-800">
-    <div class="mx-auto max-w-7xl px-4 py-6 text-sm text-slate-400">
+    <div class="mx-auto px-4 py-6 text-sm text-slate-400">
       © {{ year }} Lisa Copeland
     </div>
   </footer>
