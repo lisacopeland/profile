@@ -1,6 +1,7 @@
 export interface Project {
-  cover: string;
   title: string;
   summary: string;
   tags: string[];
+  href?: string;
+  cover?: string;
 }

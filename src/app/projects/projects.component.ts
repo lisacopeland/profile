@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Project } from '../shared/project.interface';
-import { SAMPLE_PROJECTS } from '../shared/sample-data';
+import { PROJECTS_LIST } from '../shared/sample-data';
 import { ProjectCardComponent } from "../project-card/project-card.component";
 import { CommonModule } from '@angular/common';
 
@@ -16,6 +16,6 @@ export class ProjectsComponent implements OnInit {
    constructor() {}
 
    ngOnInit(): void {
-     this.myProjects = SAMPLE_PROJECTS;
+     this.myProjects = PROJECTS_LIST;
    }
 }

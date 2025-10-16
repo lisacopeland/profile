@@ -1,10 +1,40 @@
-<article class="card group mb-4">
-  <img [src]="project.cover" [alt]="project.title" class="w-full h-175 object-cover origin-center rounded-xl mb-4" />
-  <h3 class="text-lg font-semibold mb-2 group-hover:underline">{{ project.title }}</h3>
-  <p class="text-sm text-zinc-600 dark:text-zinc-400 mb-4">{{ project.summary }}</p>
-  <div class="flex flex-wrap gap-2">
-    <span *ngFor="let tag of project.tags" class="px-2 py-1 text-xs rounded-full bg-white text-indigo-500">
-      {{ tag }}
-    </span>
-  </div>
+<!-- project-card.component.html -->
+<article
+  class="group rounded-2xl border border-slate-800 bg-slate-900/60 p-5 hover:bg-slate-900 hover:border-slate-700 transition">
+  <header class="flex items-start gap-4">
+    <!-- Visual slot: image if provided, else generated placeholder -->
+    <div class="relative h-24 w-24 flex-none rounded-xl overflow-hidden ring-1 ring-slate-700">
+      <ng-container *ngIf="project.cover; else ph">
+        <img [src]="project.cover" [alt]="project.title" class="h-full w-full object-cover" loading="lazy"
+          decoding="async" />
+      </ng-container>
+      <ng-template #ph>
+        <div class="h-full w-full grid place-items-center text-white font-semibold select-none"
+          [ngStyle]="gradientStyle()">
+          {{ initials() }}
+        </div>
+      </ng-template>
+    </div>
+
+    <!-- Text-first content -->
+    <div class="min-w-0">
+      <h3 class="text-lg font-semibold leading-tight">
+        <a *ngIf="project.href; else plain" [href]="project.href" target="_blank" rel="noopener"
+          class="hover:underline">
+          {{ project.title }}
+        </a>
+        <ng-template #plain>{{ project.title }}</ng-template>
+      </h3>
+      <p class="mt-2 text-sm text-slate-300 line-clamp-4">
+        {{ project.summary }}
+      </p>
+    </div>
+  </header>
+
+  <!-- Tags -->
+  <ul class="mt-4 flex flex-wrap gap-2">
+    <li *ngFor="let t of project.tags" class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-slate-200">
+      {{ t }}
+    </li>
+  </ul>
 </article>
